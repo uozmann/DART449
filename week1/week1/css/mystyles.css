@@ -1,0 +1,114 @@
+/* === MY STYLES === */
+@font-face {
+	font-family: cairoRegular;
+	src: url("../assets/fonts/Cairo/Cairo-Regular.ttf"); 
+  }
+
+* {
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+	}
+
+/* --- phone first --- */
+
+html, body {
+	height:100%;
+}
+
+a {
+	text-decoration: none;
+	color: #101825;
+}
+#logo {
+	position:absolute;
+	left:5%;
+	top:5%;
+	color:#fff;
+	font-size:12px;
+	z-index:10;
+}
+
+#logo a {
+	font-family: cairoRegular;
+	font-size:24px;
+}
+	
+
+section {
+	background:linear-gradient(rgb(255, 255, 255),#d8d8d8);
+	min-height: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section h1 {
+	font-family: cairoRegular;
+	font-size:48px;
+	text-transform:uppercase;
+	font-weight:normal;
+	padding: 0% 10%;
+	border-radius:10%;
+}
+
+section p {
+	font-family: cairoRegular;
+	font-size:14px;
+	padding: 0% 10%;
+}
+
+#reading:hover {
+	background: rgb(223, 223, 223);
+	padding: 10%;
+	margin-left: 2%;
+	animation: jello-horizontal 1.5s;
+}
+
+#exercises:hover {
+	background: rgb(223, 223, 223);
+	padding: 10%;
+	margin-left: 2%;
+	animation: jello-horizontal 1.5s;
+}
+
+#project:hover {
+	background: rgb(223, 223, 223);
+	padding: 10%;
+	margin-left: 2%;
+	animation: jello-horizontal 1.5s;
+}
+
+footer {
+	position: fixed;
+    bottom:0;
+    left:0;
+  	height: 10vh;
+  	width: 100%;
+	padding:20px;
+	font-family: cairoRegular;
+	font-size:18px;
+	color:#fff;
+	text-align:center;
+}
+
+/* animista*/
+@keyframes jello-horizontal {
+	0% {
+	  transform: scale3d(1, 0.5, 1);
+	}
+	100% {
+	  transform: scale3d(1, 1, 1);
+	}
+  }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
