@@ -21,9 +21,6 @@ nameButton.onclick = function() {
   // window.prompt("Enter Your Name","ex: Man Zou");
   myName = window.prompt("Enter Your Name","ex: Man Zou");
   myTextName.textContent = `I am ${myName}.`;
-
-  // myText.textContent = myAge + 3;
-  // myName.textContent = 'just changed';
 };
 
 genderButton.onclick = function() {

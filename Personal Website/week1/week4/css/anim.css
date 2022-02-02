@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: gotham, helvetica, verdana, sans-serif;
+  background:darkseagreen;
+
+}
+
+/* =================================== */
+/* ===== toggleClass example ===== */
+/* ================= */
+
+.anim {
+	animation: colorChange .2s infinite linear;
+}
+
+@keyframes colorChange {
+	0% {background: darkseagreen;}
+  25% {background: slategray;}
+  50% {background: tomato;}
+  75% {background: purple;}
+	100% {background: darkseagreen;}
+}

@@ -1,0 +1,16 @@
+html {
+  font-family: sans-serif;
+}
+h1 {font-size: 2.5vmax; text-transform: capitalize;}
+section {
+  width:50%;
+  margin:20px auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#display {
+  font-size: 20px;
+}
