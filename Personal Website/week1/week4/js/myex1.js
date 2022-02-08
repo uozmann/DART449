@@ -5,6 +5,9 @@ const messageInviteListConfirmation = document.querySelector('#displayInviteList
 const confirmer = document.querySelector('#confirmBtn');
 const unlocker = document.querySelector('#unlockBtn');
 const messageInviteList = document.querySelector('#inviteList');
+const q2 = document.querySelector('#question2');
+const q3 = document.querySelector('#question3');
+const ticket = document.querySelector('#ticket');
 let nameInvited;
 let goldenFinger = false;
 let code;
@@ -30,6 +33,9 @@ nameInvited = document.querySelector('#myText').value;
   }
     else if (nameInvited === 'Little L') {
     message.textContent = `Welcome ${nameInvited}, looks like you have found your name.`;
+    q2.style.display = 'none';
+    q3.style.display = 'none';
+    ticket.style.display = 'flex';
    }
     else {
     message.textContent = `Hello ${nameInvited}, you have not been invited.`;
@@ -38,8 +44,9 @@ nameInvited = document.querySelector('#myText').value;
 
 function myCodeFunction() {
   code = document.querySelector('#accessCode').value;
+  console.log(code);
 
-  if (code === 4399) {
+  if (code == 4399) {
     goldenFinger = true;
     messageInviteListConfirmation.textContent = `You have been granted access to the invite list. Proceed to next step`;
   }
@@ -55,6 +62,6 @@ function myCodeFunction() {
 
 function openInviteList() {
   if (goldenFinger === true) {
-    messageInviteList.textContent = `Guests: Man, Santo, Little L. Re-enter your name on the first question to get your ticket`;
+    messageInviteList.innerHTML = `Guests: Man, Santo, Little L. <br> Re-enter your name on the first question to get your ticket`;
   }
 }
