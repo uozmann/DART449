@@ -5,9 +5,8 @@ console.log(numItems);
 closer.forEach((btn) => {
   console.log(btn.textContent);
   btn.addEventListener('click', function() {
-    console.log(this);
-    btn.style.display = 'none';
-    document.querySelector('#message').textContent = btn.textContent;
+    this.style.display = 'none';
+    document.querySelector('#message').textContent = this.textContent;
     numItems--;
     if (numItems === 0) {
       document.querySelector('#message').textContent = 'all gone!!!';

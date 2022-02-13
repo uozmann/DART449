@@ -11,7 +11,7 @@ const numItems = incPoints.length;
 console.log(numItems);
 
 incPoints.forEach((btn) => {
-  console.log(btn);
+  console.log(`btn:${btn}`);
   btn.addEventListener('click', function () {
     this.style.backgroundColor = 'crimson';
     this.disabled = true;
