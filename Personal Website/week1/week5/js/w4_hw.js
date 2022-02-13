@@ -11,14 +11,17 @@ const PARENT7 = document.querySelector('#parent7');
 const PARENT8 = document.querySelector('#parent8');
 const PARENT9 = document.querySelector('#parent9');
 const MESSAGE = document.querySelector('#displayMessage');
+const MESSAGEPOINT = document.querySelector('#displayMessage1');
 
 let gridRow = 0;
+let points = 0;
 let div;
 let currentParent = PARENT;
 BUTTON.addEventListener(`click`, addGrid);
 
 function addGrid() {
   createGrid();
+  MESSAGE.textContent = `Current Row: ${gridRow}`;
   gridRow+= 1;
   if(gridRow===0) {
     currentParent = PARENT;
@@ -68,6 +71,16 @@ for (let i=0; i< 255; i+=100){
     div.style.height = `2vw`;
     const BR = document.createElement(`br`);
     currentParent.appendChild(BR);
+    div.addEventListener("click", 
+      function changeBackground(){
+        this.style.background = `rgba(255,255,${i},0.5)`;
+        points++;
+        MESSAGEPOINT.textContent = `Points: ${points}`;
+        if (points >= 20) {
+          MESSAGEPOINT.textContent = `Points: ${points}, mission accomplished!`;
+        }
+      }
+    );
     
   }
 }
