@@ -1,0 +1,61 @@
+@font-face {
+	font-family: cairoRegular;
+	src: url("../assets/fonts/Cairo/Cairo-Regular.ttf"); 
+  }
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body {
+	height:200vh;
+    background: rgb(159, 194, 131);
+}
+
+body img {
+    opacity: .5;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    top:0;
+    left: 0;
+}
+header {
+    margin-top: 10vh;
+    width: 100%;
+    height: 30vh;
+    font-family: cairoRegular;
+    justify-content: center;
+    text-align: center;
+}
+
+section {
+    background: none;
+    position: fixed;
+    top: 300;
+    left: 0;
+    width: 10vw;
+    height: 10vh;
+    transition: all 1s;
+    
+}
+
+section div {
+    /* position: fixed;
+    top: 300;
+    left: 0; */
+    background: rgb(167, 216, 68);
+    width: 20vw;
+    height: 1vh;
+    border-radius: 50%;
+    
+}
+
+article {
+    position: fixed;
+    top: 70vh;
+    left:0;
+    background: black;
+    width: 100%;
+}
