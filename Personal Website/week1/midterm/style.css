@@ -1,0 +1,158 @@
+/* === MY STYLES === */
+@font-face {
+	font-family: cairoRegular;
+	src: url("../assets/fonts/Cairo/Cairo-Regular.ttf"); 
+  }
+
+* {
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+	}
+
+/* --- phone first --- */
+
+html, body {
+	height:100%;
+}
+
+a {
+	text-decoration: none;
+	color: #d8d8d8;
+}
+#logo {
+	position:fixed;
+	left:5%;
+	top:5%;
+	color:#fff;
+	font-size:12px;
+	z-index:10;
+}
+
+#logo a {
+	font-family: cairoRegular;
+	font-size:24px;
+}
+	
+h3 {
+	font-family: cairoRegular;
+	font-size:48px;
+	font-weight:normal;
+}
+section {
+	background:linear-gradient(rgb(255, 255, 255),#d8d8d8);
+	min-height: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#intro a {
+	display: inline-block;
+	font-family: cairoRegular;
+	font-size:48px;
+	text-transform:uppercase;
+	font-weight:normal;
+	color:rgb(255, 255, 255);
+	text-shadow: 0 0 15px rgba(0,0,0,0.5);
+	border-radius:10%;
+}
+
+#intro a:hover {
+	color: #101825;
+	text-shadow: none;
+	padding: 5%;
+	transition: .3s;
+}
+
+#s1 h1{
+	display: inline-block;
+	font-family: cairoRegular;
+	font-size:48px;
+	text-transform:uppercase;
+	font-weight:normal;
+}
+
+#s2 {
+	background:linear-gradient(rgb(255, 255, 255),#d8d8d8);
+	/* min-height: 100%; */
+	height: auto;
+	padding: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#s2 article {
+	margin: 1em;
+	width: 60%;
+}
+#s2 img {
+	width: 60vw;
+	height: auto;
+}
+
+#s2 h2 {
+	font-family: cairoRegular;
+	font-size:32px;
+	font-weight: normal;
+	text-align: center;
+}
+
+
+#s2 h1 {
+	font-family: cairoRegular;
+	font-size:32px;
+	font-weight: normal;
+    margin-bottom: 1em;
+}
+
+#s2 a{
+	background: black;
+	color: #d8d8d8;	
+	
+	font-family: cairoRegular;
+	font-size:24px;
+	font-weight: normal;
+	padding: 1% 5%;
+}
+
+#s2 a:hover {
+	background:#ffffff;
+}
+
+#s2 button {
+	background: rgba(255,255,0,0.5);
+	border: none;
+	width: 10vw;
+	height: 5vh;
+	font-family: cairoRegular;
+	font-size:24px;
+}
+
+
+#s2 p {
+	font-family: cairoRegular;
+	font-size:18px;
+    margin-top: 3em;
+}
+
+#s2 iframe {
+	margin-top: 3em;
+	width: 800px;
+	height: 450px;
+}
+
+footer {
+	position: fixed;
+    bottom:0;
+    left:0;
+  	height: 10vh;
+  	width: 100%;
+	padding:20px;
+	font-family: cairoRegular;
+	font-size:18px;
+	color:#fff;
+	text-align:center;
+}
